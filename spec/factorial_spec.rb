@@ -26,7 +26,7 @@ describe Solver do
       number = 0
       result = solver.factorial(number)
       expect(result).to eq 1
-    end    
+    end
 
     it 'the method factorial should throw an exception for negative integer' do
       number = -6
