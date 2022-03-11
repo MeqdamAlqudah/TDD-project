@@ -12,4 +12,8 @@ class Solver
     return 1 if number <= 1
     number * factorial(number - 1)
   end
+
+  def reverse(str)
+    str.reverse
+  end
 end
