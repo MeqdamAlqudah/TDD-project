@@ -6,4 +6,10 @@ class Solver
     return number if result.strip.empty?
     result
   end
+
+  def factorial(number)
+    return raise StandardError, 'Factorial only for positive numbers' if number.negative?
+    return 1 if number <= 1
+    number * factorial(number - 1)
+  end
 end
